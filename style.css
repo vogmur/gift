@@ -1,0 +1,110 @@
+/*Общие настройки для всей страницы*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 
+    sans-serif;
+    background-color: #fcf8f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+/*Шапка сайта*/
+.header {
+    background:
+    linear-gradient(135deg, #ff758c,
+    #ff7eb3);
+    color:white;
+    text-align: center;
+    padding: 40px 20px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+/* Контейнер для выравнивания контента по центру */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+/* Карточка с фото */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ff758c;
+    margin-bottom: 15px;
+}
+/* Блок со списком */
+.features {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.features h2 {
+    color: #ff758c;
+    margin-top: 0;
+}
+.features ul {
+    list-style: none;
+    padding-left: 0;
+}
+.features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1.1em;
+}
+.features li :last-child {
+    border-bottom: none;
+}
+/* Подвал */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #888888;
+    font-size: 0.9em;
+}
+.btn {
+    background-color: #ff758c;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.2s,
+    background-color 0.3s;
+}
+/*Эффект при наведении мыши*/
+.btn:hover {
+    background-color: #ff4d6d;
+    transform: scale(1.05);
+}
+/*Эффект при нажатии*/
+.btn:active {
+    transform: scale(0.95);
+}
+/* Плавное появление сюрприза */
+#surpriseContent {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+}
+#surpriseContent.show {
+    opacity: 1;
+    transform: translateY(0);
+}
