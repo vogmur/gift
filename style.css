@@ -108,3 +108,16 @@ profile-img {
     opacity: 1;
     transform: translateY(0);
 }
+/* Адаптивность для смартфонов */
+@media (max-width: 600px) {
+    .card, .features {
+        padding: 15px; /* Уменьшаем внутренние отступы блоков */    
+    }
+    .profile-img {
+        width: 150px; /* слегка уменьшаем фото, чтобы оно красиво вписывалось */
+        height: 150px;
+    }
+    .header h1 {
+        font-size: 1.8em; /* Уменьшаем крупный заголовок */
+    }
+}
