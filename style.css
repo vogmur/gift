@@ -113,6 +113,36 @@ profile-img {
     opacity: 1;
     transform: translateY(0);
 }
+/* Стили для музыкального плеера*/
+.music-container {
+    text-align: center;
+    /* Центрируем текст и плеер */
+    margin: 30px auto;
+    /* Отступы и центрирование блока */
+    padding: 20px;
+    /* Внутренние отступы */
+    max-width: 400px;
+    /* Ограничение ширины для ПК */
+    width: 90%;
+    /* Адаптируемость для смартфонов */
+    background: rgba(255, 255, 255, 0.85);
+    /* Полупрозрачная белая карточка */
+    border-radius: 15px;
+    /* Закругление углов */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Тень */
+}
+.music-container p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+.music-container audio {
+    width: 100%;
+    /* Плеер занимает всю ширину карточки */
+    border-radius: 10px;
+}
 /* Адаптивность для смартфонов */
 @media (max-width: 600px) {
     .card, .features {
