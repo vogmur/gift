@@ -5,7 +5,7 @@ document.addEventListener(
         const content=document.getElementById("surpriseContent");
         // Делаем по клику
         btn.addEventListener('click', ()=>{
-        content.classList.add('show'); 
+        content.classList.remove('hidden'); 
          //Показываем скрытый блок
          confetti({particleCount:100, spread: 70, origin: {y: 0.6}}); //Салют!
         btn.style.display='none'; 
