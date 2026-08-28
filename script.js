@@ -1,14 +1,17 @@
 // Ждём, пока сайт загрузится
 document.addEventListener(
    "DOMContentLoaded", () =>{
-        const btn=document.getElementById('surpriseBtn');
-        const content=document.getElementById("surpriseContent");
-        // Делаем по клику
-        btn.addEventListener('click', ()=>{
-        content.classList.remove('hidden'); 
-         //Показываем скрытый блок
-         confetti({particleCount:100, spread: 70, origin: {y: 0.6}}); //Салют!
-        btn.style.display='none'; 
-        });   //Прячем кнопку
-    });
-    
+    // Находим все кнопки и аккордеоны (details/summary) на странице
+    const elements = document.querySelectorAll('button, .btn, summary');
+    elements.forEach(el => {
+        el.addEventListener('click', () =>
+        {
+            // Запускаем конфетти при клике
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y:0.6 }
+            })
+        })
+    })
+        
