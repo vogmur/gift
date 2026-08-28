@@ -7,7 +7,8 @@ document.addEventListener(
         btn.addEventListener('click', ()=>{
         content.classList.add('show'); 
          //Показываем скрытый блок
-        btn.style.display='none';
+         confetti({particleCount:100, spread: 70, origin: {y: 0.6}}); //Салют!
+        btn.style.display='none'; 
         });   //Прячем кнопку
     });
     
